@@ -18,40 +18,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Navigation */}
-      <nav className="flex items-center justify-between px-4 py-4 bg-white md:px-8 lg:px-16">
-        <div className="text-2xl font-bold text-[#1a5276]">SERG</div>
-
-        <div className="hidden lg:flex items-center space-x-8">
-          <Link href="#" className="text-gray-800 hover:text-gray-600">
-            Accueil
-          </Link>
-          <Link href="#" className="text-gray-800 hover:text-gray-600">
-            Services
-          </Link>
-          <Link href="#" className="text-gray-800 hover:text-gray-600">
-            À propos
-          </Link>
-          <Link href="#" className="text-gray-800 hover:text-gray-600">
-            Réalisations
-          </Link>
-          <Link href="#" className="text-gray-800 hover:text-gray-600">
-            Contact
-          </Link>
-        </div>
-
-        <div className="flex items-center space-x-4">
-          <button className="px-4 py-2 text-white bg-green-500 rounded-md hover:bg-green-600">Demander un devis</button>
-          <div className="text-gray-600">
-            <Link href="#" className="font-medium">
-              FR
-            </Link>{" "}
-            |{" "}
-            <Link href="#" className="text-gray-400">
-              EN
-            </Link>
-          </div>
-        </div>
-      </nav>
+      
 
       {/* Hero Section */}
       <section className="relative h-[500px]">
@@ -74,9 +41,8 @@ export default function Home() {
           </p>
           <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
             <button className="px-6 py-3 text-white bg-green-500 rounded-md hover:bg-green-600">
-              Obtenir un devis gratuit
+              En Savoir Plus
             </button>
-            <div className="w-full h-12 px-4 bg-white rounded-md md:w-64"></div>
           </div>
         </div>
       </section>
@@ -478,108 +444,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#1a2a3a] text-white py-12 px-4 md:px-8 lg:px-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">SERG</h3>
-              <p className="text-gray-300 mb-4">Solutions énergétiques durables et accessibles pour toute la Guinée.</p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-white">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  <Twitter className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Liens rapides</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Accueil
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    À propos
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Réalisations
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Nos services</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Installation résidentielle
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Solutions pour entreprises
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Maintenance et entretien
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Conseil et étude
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <MapPin className="w-5 h-5 mr-2 mt-0.5 text-gray-300" />
-                  <span className="text-gray-300">123 Route de Dixinn, Conakry, Guinée</span>
-                </li>
-                <li className="flex items-center">
-                  <Phone className="w-5 h-5 mr-2 text-gray-300" />
-                  <span className="text-gray-300">+224 XX XX XX XX</span>
-                </li>
-                <li className="flex items-center">
-                  <Mail className="w-5 h-5 mr-2 text-gray-300" />
-                  <span className="text-gray-300">contact@solarguinee.com</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
-            <p>© 2025 SERG - Tous droits réservés</p>
-          </div>
-        </div>
-      </footer>
 
       {/* Back to Top Button */}
       <button className="fixed bottom-6 right-6 p-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors">
