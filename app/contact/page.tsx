@@ -9,7 +9,7 @@ export default function ContactPage() {
       <section className="relative h-[500px]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=300&width=1920"
+            src="https://images.unsplash.com/photo-1638262052640-82e94d64664a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Contact SERG"
             fill
             className="object-cover brightness-75"
@@ -31,7 +31,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-2xl font-bold text-[#1a5276] mb-6">Envoyez-nous un message</h2>
+              <h2 className="text-2xl font-bold text-[#1a5276] mb-6" id="#contact-form">Envoyez-nous un message</h2>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -181,7 +181,7 @@ export default function ContactPage() {
 
               <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=300&width=600&text=Carte"
+                  src="https://www.mangalis.com/wp-content/uploads/sites/166/2024/11/noom_-171-e1742389625803-1914x960.jpg"
                   alt="Carte de localisation"
                   fill
                   className="object-cover"
@@ -248,10 +248,10 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold mb-6">Prêt à passer à l&apos;énergie solaire?</h2>
           <p className="text-xl mb-8">Demandez un devis gratuit et sans engagement dès aujourd&apos;hui</p>
           <Link
-            href="#"
+            href="#contact-form"
             className="px-8 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 text-lg font-medium inline-block"
           >
-            Obtenir un devis gratuit
+            Contactez nous
           </Link>
         </div>
       </section>

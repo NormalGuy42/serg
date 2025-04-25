@@ -33,7 +33,7 @@ export default function MobileNav({ mobileMenuOpen, setMobileMenuOpen }: MobileN
             {link.text}
           </Link>
           ))}
-          <div className="flex items-center justify-between py-2 border-b border-gray-100">
+          {/* <div className="flex items-center justify-between py-2 border-b border-gray-100">
             <span className="text-gray-600">Langue:</span>
             <div className="text-gray-600">
               <Link href="#" className="font-medium">
@@ -51,7 +51,7 @@ export default function MobileNav({ mobileMenuOpen, setMobileMenuOpen }: MobileN
             onClick={closeMobileMenu}
           >
             Demander un devis
-          </Link>
+          </Link> */}
         </div>
       </div>
 

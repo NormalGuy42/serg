@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative h-[500px]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=400&width=1920"
+            src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Équipe SERG"
             fill
             className="object-cover brightness-75"
@@ -34,22 +34,18 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-[#1a5276] mb-6">Notre Histoire</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Fondée en 2015 à Conakry, SERG (Solutions Énergétiques Renouvelables de Guinée) est née d&apos;une
+                Fondée en 2025, SERG (Société des Energies Renouvelables de Guinée) est née d&apos;une
                 vision simple mais ambitieuse : rendre l&apos;énergie solaire accessible à tous les Guinéens.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                Face aux défis énergétiques persistants en Guinée, notre fondateur, Dr. Mamadou Sow, ingénieur en
-                énergie renouvelable, a décidé de mettre son expertise au service de son pays natal après plusieurs
-                années d&apos;expérience internationale.
+                Fondée par des jeunes visionaires, motivés par la volonté d'apporter des solutions durables aux défis énergétiques de la Guinée.
+            
+                SERG est engagée à construire une Guinée indépendante sur le plan énergétique, résiliente et tournée vers les énergies propres
               </p>
-              <p className="text-lg text-gray-700">
-                Ce qui a commencé comme une petite entreprise avec seulement 5 employés s&apos;est rapidement développé
-                pour devenir le leader du marché de l&apos;énergie solaire en Guinée, avec plus de 50 experts qualifiés
-                et plus de 1500 installations réalisées à travers le pays.
-              </p>
+              
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Histoire de SERG" fill className="object-cover" />
+              <Image src="https://plus.unsplash.com/premium_photo-1682148026899-d21f17c04e80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Histoire de SERG" fill className="object-cover" />
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { CheckCircle, Lightbulb, Settings, ShoppingBag } from "lucide-react"
+import { OurServices } from "../page"
 
 export default function ServicesPage() {
   return (
@@ -9,7 +10,7 @@ export default function ServicesPage() {
       <section className="relative h-[500px]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=400&width=1920"
+            src="https://images.unsplash.com/photo-1648135327756-b606e2eb8caa?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Services SERG"
             fill
             className="object-cover brightness-75"
@@ -88,7 +89,7 @@ export default function ServicesPage() {
                 </ul>
               </div>
               <div className="order-1 md:order-2 relative h-[300px] rounded-lg overflow-hidden shadow-xl">
-                <Image src="/placeholder.svg?height=300&width=500" alt="Génie Conseil" fill className="object-cover" />
+                <Image src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Génie Conseil" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -98,7 +99,7 @@ export default function ServicesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
               <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="https://plus.unsplash.com/premium_photo-1682148196781-8bbcdfd7f537?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Installation de Panneaux Solaires"
                   fill
                   className="object-cover"
@@ -180,7 +181,7 @@ export default function ServicesPage() {
               </div>
               <div className="order-1 md:order-2 relative h-[300px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Vente d'Équipements Électriques"
                   fill
                   className="object-cover"
@@ -192,7 +193,8 @@ export default function ServicesPage() {
       </section>
 
       {/* Nos Solutions */}
-      <section className="py-16 px-4 md:px-8 lg:px-16">
+      <OurServices/>
+      {/* <section className="py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Nos Solutions</h2>
@@ -293,7 +295,7 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Notre Processus */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
@@ -358,12 +360,6 @@ export default function ServicesPage() {
             <Link
               href="/contact"
               className="px-8 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 text-lg font-medium"
-            >
-              Demander un devis
-            </Link>
-            <Link
-              href="/contact"
-              className="px-8 py-3 bg-white text-[#1a5276] rounded-md hover:bg-gray-100 text-lg font-medium"
             >
               Nous contacter
             </Link>

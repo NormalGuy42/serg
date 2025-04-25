@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import {
@@ -6,6 +8,7 @@ import {
   DollarSign,
   Facebook,
   Instagram,
+  ArrowRight,
   Leaf,
   MapPin,
   Mail,
@@ -13,6 +16,157 @@ import {
   Power,
   Twitter,
 } from "lucide-react"
+import { Button } from "@/components/ui/button";
+
+const ProjectHighlight = () => {
+  return (
+    <section className="py-16 bg-gradient-to-r from-solar-blue/5 to-solar-green/5">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-solar-blue mb-6">
+              Le Projet Solaire 590 MW
+            </h2>
+            <p className="text-lg mb-6">
+              Un projet visionnaire pour transformer le paysage énergétique de la Guinée avec la construction 
+              de centrales solaires photovoltaïques réparties sur 7 sites stratégiques, offrant une capacité 
+              totale de 590 MW.
+            </p>
+            <div className="space-y-4 mb-8">
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <ArrowRight className="text-solar-green mt-1 mr-2" />
+                  <span>
+                    <strong>Couverture nationale :</strong> 7 sites soigneusement sélectionnés 
+                    pour maximiser l'impact à travers le pays
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="text-solar-green mt-1 mr-2" />
+                  <span>
+                    <strong>Impact social majeur :</strong> Plus de 70% de la population bénéficiaire et
+                    création de plus de 10 000 emplois
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="text-solar-green mt-1 mr-2" />
+                  <span>
+                    <strong>Développement durable :</strong> Réduction significative de la dépendance 
+                    aux énergies fossiles
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="text-solar-green mt-1 mr-2" />
+                  <span>
+                    <strong>Rentabilité prouvée :</strong> Retour sur investissement moyen de 5 ans
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <Link href="/projets">
+              <Button className="bg-solar-green hover:bg-solar-blue text-white px-8 py-6 text-lg group">
+                En Savoir Plus
+                <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
+          </div>
+          <Link href='/projets'>
+            <div className="relative">
+              <img
+                src="/concept-1.png"
+                alt="Projet Solaire"
+                className="rounded-lg shadow-xl"
+              />
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/50 to-transparent">
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="text-xl font-semibold">Une vision pour l'avenir</p>
+                  <p className="text-sm opacity-90">Énergie propre et accessible pour tous</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const OurServices = () => {
+  return(
+    <section className="py-16 px-4 md:px-8 lg:px-16">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Nos services</h2>
+        <p className="text-lg text-gray-600">
+          Profitez de notre expertise complète en énergie solaire, de la conception à la maintenance.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-8">
+        <div className="bg-white rounded-lg overflow-hidden shadow-md">
+          <div className="h-48 relative">
+            <Image
+              src="/solar-panel-installation.jpg"
+              alt="Installation résidentielle"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Installation résidentielle</h3>
+            <p className="text-gray-600 mb-4">
+              Solutions solaires personnalisées pour les maisons et appartements. Autonomie énergétique et économies
+              garanties pour les particuliers.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg overflow-hidden shadow-md">
+          <div className="h-48 relative">
+            <Image
+              src="/entreprise-handshake.jpg"
+              alt="Solutions pour entreprises"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Solutions pour entreprises</h3>
+            <p className="text-gray-600 mb-4">
+              Installations de grande envergure pour entreprises et industries. Rentabilité et performance pour vos
+              activités professionnelles.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg overflow-hidden shadow-md">
+          <div className="h-48 relative">
+            <Image
+              src="/solar-panel-maintenance.jpg"
+              alt="Maintenance et entretien"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Maintenance et entretien</h3>
+            <p className="text-gray-600 mb-4">
+              Services complets d&apos;entretien et de maintenance pour garantir la longévité et les performances de
+              vos installations solaires.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center mt-10">
+        <button className="px-6 py-3 text-white bg-[#1a5276] rounded-md hover:bg-[#154360]">
+          Découvrir nos services
+        </button>
+      </div>
+    </div>
+  </section>
+  )
+}
 
 export default function Home() {
   return (
@@ -52,7 +206,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div className="relative h-[400px] bg-gray-100 rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/sunny-conakry.jpg"
               alt="Developer working on code"
               fill
               className="object-cover"
@@ -61,10 +215,9 @@ export default function Home() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-800">Qui sommes-nous</h2>
             <p className="text-lg text-gray-600">
-              Depuis 2015, SolarGuinée est le leader de l&apos;installation de panneaux solaires en Guinée. Notre équipe
-              d&apos;experts qualifiés s&apos;engage à fournir des solutions énergétiques durables et accessibles pour
-              les particuliers et les entreprises. Notre mission est de contribuer à l&apos;indépendance énergétique de
-              la Guinée tout en préservant l&apos;environnement.
+            La Société des Energies Renouvelables de Guinée (SERG) est une entreprise guinéene fondée par des jeunes visionaires, motivés par la volonté d'apporter des solutions durables aux défis énergétiques de la Guinée. <br/><br/>
+            
+            SERG est née de l'ambition de construire une Guinée indépendante sur le plan énergétique, résiliente et tournée vers les énergies propres
             </p>
             <button className="px-6 py-2 text-white bg-[#1a5276] rounded-md hover:bg-[#154360]">En savoir plus</button>
           </div>
@@ -125,10 +278,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> 
+
+      <OurServices/>     
 
       {/* Key Figures */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#1a5276] text-white">
+      {/* <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#1a5276] text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Chiffres clés</h2>
@@ -157,84 +312,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Our Services */}
-      <section className="py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Nos services</h2>
-            <p className="text-lg text-gray-600">
-              Profitez de notre expertise complète en énergie solaire, de la conception à la maintenance.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-48 relative">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Installation résidentielle"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Installation résidentielle</h3>
-                <p className="text-gray-600 mb-4">
-                  Solutions solaires personnalisées pour les maisons et appartements. Autonomie énergétique et économies
-                  garanties pour les particuliers.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-48 relative">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Solutions pour entreprises"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Solutions pour entreprises</h3>
-                <p className="text-gray-600 mb-4">
-                  Installations de grande envergure pour entreprises et industries. Rentabilité et performance pour vos
-                  activités professionnelles.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-48 relative">
-                <Image
-                  src="/placeholder.svg?height=200&width=400"
-                  alt="Maintenance et entretien"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Maintenance et entretien</h3>
-                <p className="text-gray-600 mb-4">
-                  Services complets d&apos;entretien et de maintenance pour garantir la longévité et les performances de
-                  vos installations solaires.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-10">
-            <button className="px-6 py-3 text-white bg-[#1a5276] rounded-md hover:bg-[#154360]">
-              Découvrir nos services
-            </button>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Testimonials */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
+      {/* <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Témoignages clients</h2>
@@ -330,10 +413,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <ProjectHighlight/>
 
       {/* Recent Projects */}
-      <section className="py-16 px-4 md:px-8 lg:px-16">
+      {/* <section className="py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Projets récents</h2>
@@ -353,7 +438,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Form */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
@@ -446,7 +531,11 @@ export default function Home() {
       </section>
 
       {/* Back to Top Button */}
-      <button className="fixed bottom-6 right-6 p-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors">
+      <button onClick={()=>window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })} 
+        className="fixed bottom-6 right-6 p-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors">
         <ArrowUp className="w-6 h-6" />
       </button>
     </main>

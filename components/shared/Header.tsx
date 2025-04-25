@@ -20,6 +20,10 @@ export const headerLinks = [
         url: '/services'
     },
     {
+      text: 'Projets',
+      url: '/projets'
+  },
+    {
         text: 'Contact',
         url: '/contact'
     }
@@ -54,7 +58,7 @@ export default function Header() {
           </div>
   
           <div className="flex items-center space-x-4">
-            <Link
+            {/* <Link
               href="/contact"
               className="hidden lg:block px-4 py-2 text-white bg-green-500 rounded-md hover:bg-green-600"
             >
@@ -68,7 +72,7 @@ export default function Header() {
               <Link href="#" className="text-gray-400">
                 EN
               </Link>
-            </div>
+            </div> */}
   
             {/* Mobile menu button */}
             <button
