@@ -175,12 +175,11 @@ const Projects = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-solar-blue">
-              Étude Financière du Projet
+              Impact économique et énergétique
             </h2>
             <div className="mb-8 max-w-3xl mx-auto text-center">
               <p className="text-lg text-gray-700">
-                Une analyse financière détaillée démontre la viabilité et la rentabilité du projet, 
-                avec des retours sur investissement attractifs variant entre 4,7 et 5,3 ans selon les sites.
+              L'analyse ci-dessous présente une vue d'ensemble des paramètres clés pour chaque site, incluant l'irradiation solaire, la capacité de production, et les projections financières. Ces données soulignent l'impact transformateur du projet sur l'économie locale et nationale.
               </p>
             </div>
             <FinancialTable />
