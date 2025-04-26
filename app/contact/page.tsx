@@ -114,7 +114,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 text-white bg-main-green rounded-md hover:bg-green-600 transition-colors"
+                  className="w-full py-3 text-white bg-main-green rounded-md hover:bg-main-darkblue transition-colors"
                 >
                   Envoyer ma demande
                 </button>
@@ -249,7 +249,7 @@ export default function ContactPage() {
           <p className="text-xl mb-8">Demandez un devis gratuit et sans engagement dès aujourd&apos;hui</p>
           <Link
             href="#contact-form"
-            className="px-8 py-3 bg-main-green text-white rounded-md hover:bg-green-600 text-lg font-medium inline-block"
+            className="px-8 py-3 bg-main-green text-white rounded-md hover: text-lg font-medium inline-block"
           >
             Contactez nous
           </Link>

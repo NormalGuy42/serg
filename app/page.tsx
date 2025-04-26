@@ -380,7 +380,7 @@ export default function Home() {
 
               <button
                 type="submit"
-                className="w-full py-3 text-white bg-main-green rounded-md hover:bg-green-600 transition-colors"
+                className="w-full py-3 text-white bg-main-green rounded-md hover:bg-main-darkblue transition-colors"
               >
                 Envoyer ma demande
               </button>
