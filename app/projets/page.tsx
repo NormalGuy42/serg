@@ -175,11 +175,11 @@ const Projects = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-solar-blue">
-              Impact économique et énergétique
+              Impact énergétique
             </h2>
             <div className="mb-8 max-w-3xl mx-auto text-center">
               <p className="text-lg text-gray-700">
-              L'analyse ci-dessous présente une vue d'ensemble des paramètres clés pour chaque site, incluant l'irradiation solaire, la capacité de production, et les projections financières. Ces données soulignent l'impact transformateur du projet sur l'économie locale et nationale.
+              L'analyse ci-dessous présente une vue d'ensemble des paramètres clés pour chaque site, incluant l'irradiation solaire et la capacité de production. Ces données soulignent l'impact transformateur du projet sur le secteur de l'énergie locale et nationale.
               </p>
             </div>
             <FinancialTable />

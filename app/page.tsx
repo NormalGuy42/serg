@@ -96,7 +96,7 @@ export const OurServices = () => {
     <section className="py-16 px-4 md:px-8 lg:px-16">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Nos services</h2>
+        <h2 className="text-3xl font-bold text-main-darkblue mb-4">Nos services</h2>
         <p className="text-lg text-gray-600">
           Profitez de notre expertise complète en énergie solaire, de la conception à la maintenance.
         </p>
@@ -113,7 +113,7 @@ export const OurServices = () => {
             />
           </div>
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Installation résidentielle</h3>
+            <h3 className="text-xl font-semibold mb-3 text-main-darkblue">Installation résidentielle</h3>
             <p className="text-gray-600 mb-4">
               Solutions solaires personnalisées pour les maisons et appartements. Autonomie énergétique et économies
               garanties pour les particuliers.
@@ -131,7 +131,7 @@ export const OurServices = () => {
             />
           </div>
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Solutions pour entreprises</h3>
+            <h3 className="text-xl font-semibold mb-3 text-main-darkblue">Solutions pour entreprises</h3>
             <p className="text-gray-600 mb-4">
               Installations de grande envergure pour entreprises et industries. Rentabilité et performance pour vos
               activités professionnelles.
@@ -149,7 +149,7 @@ export const OurServices = () => {
             />
           </div>
           <div className="p-6">
-            <h3 className="text-xl font-semibold mb-3 text-[#1a5276]">Maintenance et entretien</h3>
+            <h3 className="text-xl font-semibold mb-3 text-main-darkblue">Maintenance et entretien</h3>
             <p className="text-gray-600 mb-4">
               Services complets d&apos;entretien et de maintenance pour garantir la longévité et les performances de
               vos installations solaires.
@@ -159,7 +159,7 @@ export const OurServices = () => {
       </div>
 
       <div className="text-center mt-10">
-        <button className="px-6 py-3 text-white bg-[#1a5276] rounded-md hover:bg-[#154360]">
+        <button className="px-6 py-3 text-white bg-main-darkblue rounded-md hover:bg-[#154360]">
           Découvrir nos services
         </button>
       </div>
@@ -194,7 +194,7 @@ export default function Home() {
             Des solutions énergétiques durables, économiques et fiables
           </p>
           <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <button className="px-6 py-3 text-white bg-green-500 rounded-md hover:bg-green-600">
+            <button className="px-6 py-3 text-white bg-main-green rounded-md hover:bg-main-darkblue">
               En Savoir Plus
             </button>
           </div>
@@ -213,13 +213,13 @@ export default function Home() {
             />
           </div>
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-800">Qui sommes-nous</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue">Qui sommes-nous</h2>
             <p className="text-lg text-gray-600">
             La Société des Energies Renouvelables de Guinée (SERG) est une entreprise guinéene fondée par des jeunes visionaires, motivés par la volonté d'apporter des solutions durables aux défis énergétiques de la Guinée. <br/><br/>
             
             SERG est née de l'ambition de construire une Guinée indépendante sur le plan énergétique, résiliente et tournée vers les énergies propres
             </p>
-            <button className="px-6 py-2 text-white bg-[#1a5276] rounded-md hover:bg-[#154360]">En savoir plus</button>
+            <button className="px-6 py-2 text-white bg-main-darkblue rounded-md hover:bg-[#154360]">En savoir plus</button>
           </div>
         </div>
       </section>
@@ -228,7 +228,7 @@ export default function Home() {
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Pourquoi choisir l&apos;énergie solaire en Guinée</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Pourquoi choisir l&apos;énergie solaire en Guinée</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Découvrez comment l&apos;énergie solaire peut transformer votre quotidien avec des avantages concrets et
               durables.
@@ -238,7 +238,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <DollarSign className="w-8 h-8 text-[#1a5276]" />
+                <DollarSign className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Économisez sur vos factures d&apos;électricité</h3>
               <p className="text-gray-600">
@@ -249,7 +249,7 @@ export default function Home() {
 
             <div className="bg-white p-6 rounded-lg text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Power className="w-8 h-8 text-[#1a5276]" />
+                <Power className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Indépendance face aux coupures de courant</h3>
               <p className="text-gray-600">
@@ -259,7 +259,7 @@ export default function Home() {
 
             <div className="bg-white p-6 rounded-lg text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Leaf className="w-8 h-8 text-[#1a5276]" />
+                <Leaf className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Solution écologique et durable</h3>
               <p className="text-gray-600">
@@ -269,7 +269,7 @@ export default function Home() {
 
             <div className="bg-white p-6 rounded-lg text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-[#1a5276]" />
+                <CheckCircle className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Installation rapide et professionnelle</h3>
               <p className="text-gray-600">
@@ -444,7 +444,7 @@ export default function Home() {
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Intéressé? Contactez-nous</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Intéressé? Contactez-nous</h2>
             <p className="text-lg text-gray-600">
               Remplissez ce formulaire et notre équipe vous contactera dans les plus brefs délais
             </p>
@@ -521,7 +521,7 @@ export default function Home() {
 
               <button
                 type="submit"
-                className="w-full py-3 text-white bg-green-500 rounded-md hover:bg-green-600 transition-colors"
+                className="w-full py-3 text-white bg-main-green rounded-md hover:bg-green-600 transition-colors"
               >
                 Envoyer ma demande
               </button>
@@ -535,7 +535,7 @@ export default function Home() {
           top: 0,
           behavior: 'smooth',
         })} 
-        className="fixed bottom-6 right-6 p-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors">
+        className="fixed bottom-6 right-6 p-3 bg-main-green text-white rounded-full shadow-lg hover:bg-main-darkblue transition-colors">
         <ArrowUp className="w-6 h-6" />
       </button>
     </main>

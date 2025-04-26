@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react";
 import Image from "next/image"
+import Link from "next/link";
 
 export default function Footer(){
     return(
@@ -31,29 +32,29 @@ export default function Footer(){
               <h3 className="text-lg font-semibold mb-4">Liens rapides</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <Link href="/" className="text-gray-300 hover:text-white">
                     Accueil
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <Link href="/services" className="text-gray-300 hover:text-white">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <Link href="/a-propos" className="text-gray-300 hover:text-white">
                     À propos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Réalisations
-                  </a>
+                  <Link href="/projets" className="text-gray-300 hover:text-white">
+                    Projets
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
+                  <Link href="/contact" className="text-gray-300 hover:text-white">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -97,7 +98,7 @@ export default function Footer(){
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-5 h-5 mr-2 text-gray-300" />
-                  <span className="text-gray-300">contact@solarguinee.com</span>
+                  <span className="text-gray-300">contact@serg</span>
                 </li>
               </ul>
             </div>

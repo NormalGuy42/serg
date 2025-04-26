@@ -29,7 +29,7 @@ export default function ServicesPage() {
       {/* Introduction */}
       <section className="py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#1a5276] mb-6">Une expertise complète en énergie solaire</h2>
+          <h2 className="text-3xl font-bold text-main-darkblue mb-6">Une expertise complète en énergie solaire</h2>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto">
             Chez SERG, nous offrons une gamme complète de services pour accompagner votre transition vers l&apos;énergie
             solaire. De l&apos;étude initiale à la maintenance de vos installations, notre équipe d&apos;experts vous
@@ -42,7 +42,7 @@ export default function ServicesPage() {
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Nos Domaines d&apos;Activité</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Nos Domaines d&apos;Activité</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Découvrez notre expertise dans trois domaines complémentaires pour répondre à tous vos besoins
               énergétiques
@@ -54,10 +54,10 @@ export default function ServicesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
               <div className="order-2 md:order-1">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mr-4">
                     <Lightbulb className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#1a5276]">1. Génie Conseil</h3>
+                  <h3 className="text-2xl font-bold text-main-darkblue">1. Génie Conseil</h3>
                 </div>
                 <p className="text-lg text-gray-700 mb-6">
                   Notre équipe d&apos;ingénieurs spécialisés vous accompagne dans l&apos;analyse et l&apos;optimisation
@@ -107,10 +107,10 @@ export default function ServicesPage() {
               </div>
               <div>
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mr-4">
+                  <div className="min-w-12 min-h-12 bg-main-darkblue rounded-full flex items-center justify-center mr-4">
                     <Settings className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#1a5276]">2. Installation de Panneaux Solaires</h3>
+                  <h3 className="text-2xl font-bold text-main-darkblue">2. Installation de Panneaux Solaires</h3>
                 </div>
                 <p className="text-lg text-gray-700 mb-6">
                   Nous assurons l&apos;installation complète de systèmes photovoltaïques sur mesure, de la conception à
@@ -147,10 +147,10 @@ export default function ServicesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-8">
               <div className="order-2 md:order-1">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mr-4">
+                  <div className="min-w-12 min-h-12 bg-main-darkblue rounded-full flex items-center justify-center mr-4">
                     <ShoppingBag className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#1a5276]">3. Vente d&apos;Équipements Électriques</h3>
+                  <h3 className="text-2xl font-bold text-main-darkblue">3. Vente d&apos;Équipements Électriques</h3>
                 </div>
                 <p className="text-lg text-gray-700 mb-6">
                   Nous proposons une large gamme d&apos;équipements solaires et électriques de haute qualité, avec un
@@ -301,7 +301,7 @@ export default function ServicesPage() {
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Notre Processus</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Notre Processus</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Une approche structurée en 4 étapes pour garantir des résultats optimaux
             </p>
@@ -309,7 +309,7 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md text-center relative">
-              <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+              <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
                 1
               </div>
               <h3 className="text-xl font-semibold mb-3">Consultation</h3>
@@ -319,7 +319,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+              <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
                 2
               </div>
               <h3 className="text-xl font-semibold mb-3">Conception</h3>
@@ -329,7 +329,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+              <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
                 3
               </div>
               <h3 className="text-xl font-semibold mb-3">Installation</h3>
@@ -339,7 +339,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+              <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
                 4
               </div>
               <h3 className="text-xl font-semibold mb-3">Suivi</h3>
@@ -350,7 +350,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#1a5276] text-white">
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-main-darkblue text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Prêt à transformer votre approvisionnement énergétique?</h2>
           <p className="text-xl mb-8">
@@ -359,7 +359,7 @@ export default function ServicesPage() {
           <div className="flex flex-col md:flex-row justify-center gap-4">
             <Link
               href="/contact"
-              className="px-8 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 text-lg font-medium"
+              className="px-8 py-3 bg-main-green text-white rounded-md hover: text-lg font-medium"
             >
               Nous contacter
             </Link>

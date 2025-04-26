@@ -50,7 +50,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-8">
             {
                 headerLinks.map((link)=>(
-                    <Link href={link.url} key={link.url} className={pathname == link.url ? 'text-green-500' : 'text-gray-800 hover:text-gray-600'}>
+                    <Link href={link.url} key={link.url} className={pathname == link.url ? 'text-main-green' : 'text-gray-800 hover:text-gray-600'}>
                         {link.text}
                     </Link>
                 ))

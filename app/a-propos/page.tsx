@@ -22,7 +22,7 @@ export default function AboutPage() {
             À propos de SERG
           </h1>
           <p className="mb-8 text-xl text-center md:text-2xl max-w-3xl">
-            Votre partenaire de confiance pour l&apos;énergie solaire en Guinée depuis 2015
+            Votre partenaire de confiance pour l&apos;énergie solaire en Guinée depuis 2025
           </p>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#1a5276] mb-6">Notre Histoire</h2>
+              <h2 className="text-3xl font-bold text-main-darkblue mb-6">Notre Histoire</h2>
               <p className="text-lg text-gray-700 mb-4">
                 Fondée en 2025, SERG (Société des Energies Renouvelables de Guinée) est née d&apos;une
                 vision simple mais ambitieuse : rendre l&apos;énergie solaire accessible à tous les Guinéens.
@@ -55,7 +55,7 @@ export default function AboutPage() {
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Notre Mission et Vision</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Notre Mission et Vision</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Nous sommes guidés par des principes forts qui définissent notre approche et notre engagement envers nos
               clients et l&apos;environnement.
@@ -64,10 +64,10 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-[#1a5276] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 mx-auto bg-main-darkblue rounded-full flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4">Notre Mission</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center">Notre Mission</h3>
               <p className="text-lg text-gray-700">
                 Notre mission est de transformer le paysage énergétique de la Guinée en fournissant des solutions
                 solaires fiables, durables et économiques qui améliorent la qualité de vie des particuliers et la
@@ -80,10 +80,10 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-[#1a5276] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 mx-auto bg-main-darkblue rounded-full flex items-center justify-center mb-6">
                 <Lightbulb className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4">Notre Vision</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center">Notre Vision</h3>
               <p className="text-lg text-gray-700">
                 Nous aspirons à être le catalyseur d&apos;une révolution énergétique en Guinée, où chaque foyer et
                 chaque entreprise pourra bénéficier d&apos;une énergie propre, fiable et abordable.
@@ -102,7 +102,7 @@ export default function AboutPage() {
       <section className="py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Nos Valeurs</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Nos Valeurs</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Chez SERG, nos valeurs fondamentales guident chacune de nos actions et décisions
             </p>
@@ -111,7 +111,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-[#1a5276]" />
+                <CheckCircle className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Excellence</h3>
               <p className="text-gray-600">
@@ -122,7 +122,7 @@ export default function AboutPage() {
 
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-[#1a5276]" />
+                <Users className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Intégrité</h3>
               <p className="text-gray-600">
@@ -133,7 +133,7 @@ export default function AboutPage() {
 
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-[#1a5276]" />
+                <Award className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Innovation</h3>
               <p className="text-gray-600">
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-yellow-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="w-8 h-8 text-[#1a5276]" />
+                <Lightbulb className="w-8 h-8 text-main-darkblue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Durabilité</h3>
               <p className="text-gray-600">
@@ -160,7 +160,7 @@ export default function AboutPage() {
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Notre Équipe</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Notre Équipe</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Découvrez les experts passionnés qui font de SERG le leader de l&apos;énergie solaire en Guinée
             </p>
@@ -196,7 +196,7 @@ export default function AboutPage() {
       <section className="py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Certifications et Partenaires</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Certifications et Partenaires</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Nous travaillons avec les meilleurs et respectons les normes les plus strictes
             </p>
@@ -219,7 +219,7 @@ export default function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#1a5276] text-white">
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-main-darkblue text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Prêt à passer à l&apos;énergie solaire?</h2>
           <p className="text-xl mb-8">
@@ -228,13 +228,13 @@ export default function AboutPage() {
           <div className="flex flex-col md:flex-row justify-center gap-4">
             <Link
               href="/contact"
-              className="px-8 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 text-lg font-medium"
+              className="px-8 py-3 bg-main-green text-white rounded-md hover: text-lg font-medium"
             >
               Nous contacter
             </Link>
             <Link
               href="/services"
-              className="px-8 py-3 bg-white text-[#1a5276] rounded-md hover:bg-gray-100 text-lg font-medium"
+              className="px-8 py-3 bg-white text-main-darkblue rounded-md hover:bg-gray-100 text-lg font-medium"
             >
               Découvrir nos services
             </Link>

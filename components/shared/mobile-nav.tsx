@@ -27,7 +27,7 @@ export default function MobileNav({ mobileMenuOpen, setMobileMenuOpen }: MobileN
             <Link
             href={link.url}
             key={link.url}
-            className={pathname == link.url ? 'text-green-500' : "text-gray-800 hover:text-green-500 py-2 border-b border-gray-100"}
+            className={pathname == link.url ? 'text-main-green' : "text-gray-800 hover:text-main-green py-2 border-b border-gray-100"}
             onClick={closeMobileMenu}
             >
             {link.text}

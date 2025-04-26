@@ -23,6 +23,9 @@ export default {
 				'montserrat': ['Montserrat', 'sans-serif']
 			},
 			colors: {
+        'main-darkblue': 'var(--color-main-darkblue)',
+        'main-green': 'var(--color-main-green)',
+        'main-grey': 'var(--color-main-grey)',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -57,8 +60,9 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				solar: {
-					blue: '#1a5276',
-					green: '#2ecc71',
+					// blue: '#1a5276',
+          blue: '#2f4964',
+					green: '#8eba64',
 					yellow: '#f4d03f',
 					white: '#ffffff'
 				},

@@ -31,7 +31,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-2xl font-bold text-[#1a5276] mb-6" id="#contact-form">Envoyez-nous un message</h2>
+              <h2 className="text-2xl font-bold text-main-darkblue mb-6" id="#contact-form">Envoyez-nous un message</h2>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 text-white bg-green-500 rounded-md hover:bg-green-600 transition-colors"
+                  className="w-full py-3 text-white bg-main-green rounded-md hover:bg-green-600 transition-colors"
                 >
                   Envoyer ma demande
                 </button>
@@ -123,12 +123,12 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-bold text-[#1a5276] mb-6">Nos coordonnées</h2>
+              <h2 className="text-2xl font-bold text-main-darkblue mb-6">Nos coordonnées</h2>
 
               <div className="bg-white p-6 rounded-lg shadow-md mb-8">
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -149,7 +149,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-[#1a5276] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <div className="w-12 h-12 bg-main-darkblue rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-[#1a5276] mb-4">Heures d&apos;ouverture</h3>
+              <h3 className="text-xl font-bold text-main-darkblue mb-4">Heures d&apos;ouverture</h3>
               <div className="bg-white p-6 rounded-lg shadow-md mb-8">
                 <ul className="space-y-2">
                   <li className="flex justify-between">
@@ -196,13 +196,13 @@ export default function ContactPage() {
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a5276] mb-4">Questions fréquentes</h2>
+            <h2 className="text-3xl font-bold text-main-darkblue mb-4">Questions fréquentes</h2>
             <p className="text-lg text-gray-600">Trouvez rapidement des réponses aux questions les plus courantes</p>
           </div>
 
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-[#1a5276]">
+              <h3 className="text-xl font-semibold mb-2 text-main-darkblue">
                 Combien coûte l&apos;installation d&apos;un système solaire?
               </h3>
               <p className="text-gray-700">
@@ -213,7 +213,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-[#1a5276]">Combien de temps dure l&apos;installation?</h3>
+              <h3 className="text-xl font-semibold mb-2 text-main-darkblue">Combien de temps dure l&apos;installation?</h3>
               <p className="text-gray-700">
                 La durée d&apos;installation dépend de la complexité du projet. Une installation résidentielle standard
                 peut prendre de 1 à 3 jours, tandis que les projets commerciaux plus importants peuvent nécessiter
@@ -222,7 +222,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-[#1a5276]">
+              <h3 className="text-xl font-semibold mb-2 text-main-darkblue">
                 Quelle est la durée de vie des panneaux solaires?
               </h3>
               <p className="text-gray-700">
@@ -232,7 +232,7 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-[#1a5276]">Proposez-vous des options de financement?</h3>
+              <h3 className="text-xl font-semibold mb-2 text-main-darkblue">Proposez-vous des options de financement?</h3>
               <p className="text-gray-700">
                 Oui, nous collaborons avec plusieurs institutions financières pour offrir des solutions de financement
                 adaptées à différents budgets. Contactez-nous pour en savoir plus sur les options disponibles.
@@ -243,13 +243,13 @@ export default function ContactPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#1a5276] text-white">
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-main-darkblue text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Prêt à passer à l&apos;énergie solaire?</h2>
           <p className="text-xl mb-8">Demandez un devis gratuit et sans engagement dès aujourd&apos;hui</p>
           <Link
             href="#contact-form"
-            className="px-8 py-3 bg-green-500 text-white rounded-md hover:bg-green-600 text-lg font-medium inline-block"
+            className="px-8 py-3 bg-main-green text-white rounded-md hover:bg-green-600 text-lg font-medium inline-block"
           >
             Contactez nous
           </Link>
