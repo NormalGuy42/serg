@@ -17,6 +17,7 @@ import {
   Twitter,
 } from "lucide-react"
 import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 const ProjectHighlight = () => {
   return (
@@ -92,6 +93,9 @@ const ProjectHighlight = () => {
 };
 
 export const OurServices = () => {
+
+  const pathname = usePathname();
+
   return(
     <section className="py-16 px-4 md:px-8 lg:px-16">
     <div className="max-w-6xl mx-auto">
@@ -159,9 +163,16 @@ export const OurServices = () => {
       </div>
 
       <div className="text-center mt-10">
-        <button className="px-6 py-3 text-white bg-main-darkblue rounded-md hover:bg-[#154360]">
-          Découvrir nos services
-        </button>
+        {
+          pathname !== '/services' 
+          
+          &&
+            <Link href='/services'>
+              <button className="px-6 py-3 text-white bg-main-darkblue rounded-md hover:bg-[#154360]">
+                Découvrir nos services
+              </button>
+            </Link> 
+        }
       </div>
     </div>
   </section>
@@ -194,9 +205,11 @@ export default function Home() {
             Des solutions énergétiques durables, économiques et fiables
           </p>
           <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <button className="px-6 py-3 text-white bg-main-green rounded-md hover:bg-main-darkblue">
-              En Savoir Plus
-            </button>
+            <Link href='/projets'>
+              <button className="px-6 py-3 text-white bg-main-green rounded-md hover:bg-main-darkblue">
+                En Savoir Plus
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -219,7 +232,9 @@ export default function Home() {
             
             SERG est née de l'ambition de construire une Guinée indépendante sur le plan énergétique, résiliente et tournée vers les énergies propres
             </p>
-            <button className="px-6 py-2 text-white bg-main-darkblue rounded-md hover:bg-[#154360]">En savoir plus</button>
+            <Link href='/a-propos'>
+              <button className="px-6 py-2 text-white bg-main-darkblue rounded-md hover:bg-[#154360]">En savoir plus</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -281,164 +296,8 @@ export default function Home() {
       </section> 
 
       <OurServices/>     
-
-      {/* Key Figures */}
-      {/* <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#1a5276] text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Chiffres clés</h2>
-            <p className="text-lg">Découvrez l&apos;impact de notre expertise à travers la Guinée</p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="text-5xl font-bold text-yellow-300 mb-2">1500+</p>
-              <p className="text-lg">Installations réalisées</p>
-            </div>
-
-            <div>
-              <p className="text-5xl font-bold text-yellow-300 mb-2">5000 kW</p>
-              <p className="text-lg">Puissance totale installée</p>
-            </div>
-
-            <div>
-              <p className="text-5xl font-bold text-yellow-300 mb-2">60%</p>
-              <p className="text-lg">Économies moyennes réalisées</p>
-            </div>
-
-            <div>
-              <p className="text-5xl font-bold text-yellow-300 mb-2">8 ans</p>
-              <p className="text-lg">Années d&apos;expérience</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      
-
-      {/* Testimonials */}
-      {/* <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Témoignages clients</h2>
-            <p className="text-lg text-gray-600">Découvrez ce que nos clients disent de nos services</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Mamadou Diallo"
-                    width={64}
-                    height={64}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Mamadou Diallo</h3>
-                  <p className="text-gray-600">Conakry</p>
-                </div>
-              </div>
-              <div className="flex text-yellow-400 mb-3">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-              </div>
-              <p className="text-gray-600 italic">
-                "Depuis l&apos;installation de notre système solaire, nous ne connaissons plus les coupures de courant.
-                L&apos;équipe de SolarGuinée a été professionnelle et efficace du début à la fin."
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Fatou Camara"
-                    width={64}
-                    height={64}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Fatou Camara</h3>
-                  <p className="text-gray-600">Kankan</p>
-                </div>
-              </div>
-              <div className="flex text-yellow-400 mb-3">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-              </div>
-              <p className="text-gray-600 italic">
-                "Excellente entreprise avec un service client exceptionnel. Notre facture d&apos;électricité a été
-                réduite de 70%. Je recommande vivement leurs services."
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Ibrahim Bah"
-                    width={64}
-                    height={64}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Ibrahim Bah</h3>
-                  <p className="text-gray-600">Kindia</p>
-                </div>
-              </div>
-              <div className="flex text-yellow-400 mb-3">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span className="text-gray-300">★</span>
-              </div>
-              <p className="text-gray-600 italic">
-                "Une installation propre et rapide. Les panneaux solaires fonctionnent parfaitement depuis 2 ans sans
-                aucun problème. Un investissement qui en vaut vraiment la peine."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <ProjectHighlight/>
 
-      {/* Recent Projects */}
-      {/* <section className="py-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Projets récents</h2>
-            <p className="text-lg text-gray-600">Explorez nos dernières réalisations à travers toute la Guinée</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="bg-gray-100 h-64 rounded-lg relative overflow-hidden">
-                <Image
-                  src={`/placeholder.svg?height=300&width=400&text=Projet ${item}`}
-                  alt={`Projet ${item}`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Contact Form */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
